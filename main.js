@@ -21,12 +21,10 @@ for (let b =0; b <list_items.length; b++){
 	item.addEventListener('dragend', function(){
 		setTimeout(function() {
 			draggedItem.style.display = 'block';
-
 			draggedItem = null;
-
 		}, 0.1);
 	})
-
+	
 	for (let i =0; i < lists.length; i++){
 		const list = lists[i];
 
@@ -41,17 +39,14 @@ for (let b =0; b <list_items.length; b++){
 			this.style.backgroundColor = 'rgba (0, 0, 0, 0.22)';
 		});
 
-
 		list.addEventListener('dragleave', function(eListener){
 			this.style.backgroundColor = 'rgba (0, 0, 0, 0.11)';
 			});
-
 
 		list.addEventListener('drop', function(eListener){
 			console.log('drop');
 			this.append(draggedItem);
 			this.style.backgroundColor = 'rgba(0, 0, 0, 0.11)';
 		});
-
 	}
 } 
