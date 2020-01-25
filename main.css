@@ -25,6 +25,7 @@ header {
 	margin-bottom: 15px;
 	background: green;
 	border-bottom-left-radius: 15px;
+	width: 107%;
 	
 	border-bottom-right-radius: 15px;
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.21);
@@ -35,7 +36,6 @@ header {
 	display: flex;
 	flex: 1;
 	width: 100%;
-
 }
 
 .lists .list1{
@@ -44,7 +44,7 @@ header {
 	flex: 1;
 
 	width: 100%;
-	min-width: 220px;
+	min-width: 258px;
 	max-width: 350px;
 	min-height: 150px;
 
@@ -63,10 +63,47 @@ header {
 	text-align: center;
 	margin: 4px 0px;
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.21);
+	justify-content: center;
 }
+
 .creator{
 	display:flex;
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
+	font-family: intro inline;
+	border-top: 12px double green;
+	width: 107%;
 }
+
+span{
+	opacity: 0.01;
+}
+
+img{
+	width: 37px;
+	height: 37px;
+	margin-right: 10px;
+	}
+
+#beforeo::after{
+	display: flex;
+	content: ' '
+}
+.days{
+	color: white;
+	justify-content: center;
+	align-content: center;
+	margin-left: 71px;
+	padding: 10px;
+	font-weight: 400;
+	font-family: intro;
+}
+
+hr{
+
+	margin: 5px;
+	border-top: 0.8px solid white;
+	
+}
+
